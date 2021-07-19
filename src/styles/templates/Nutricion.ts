@@ -94,7 +94,7 @@ export const Ingredients = styled.div`
 export const Card = styled.div`
   height: 300px;
   color: ${({ theme }) => theme.colors.white};
-  /* background-image: url("https://www.subway.com/-/media/_SubwayV2/NutritionInfoPage/Nutrition-Video-At-Home-v2.jpg"); */
+  background-image: url("https://www.subway.com/-/media/_SubwayV2/NutritionInfoPage/Nutrition-Video-At-Home-v2.jpg");
   &:first-child {
   }
   background-size: cover;

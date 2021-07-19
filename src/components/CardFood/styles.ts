@@ -8,7 +8,7 @@ export const Container = styled.div`
   grid-template-columns: repeat(4, 1fr);
 
   grid-gap: 2rem;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 4rem 0;
 
   li {
     max-width: 250px;

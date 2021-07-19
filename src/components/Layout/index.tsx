@@ -9,6 +9,7 @@ interface LayoutProps {
 }
 
 function Layout({ children }: LayoutProps) {
+  document.title = "Redesign Subway";
   return (
     <Container>
       <Header />

@@ -48,19 +48,37 @@ export const FlexLeft = styled.div`
     }
   }
 
-  p {
-    font-size: 1.25rem;
-    font-weight: 600;
+  > span {
+    margin-top: 2rem;
 
-    margin-top: 0.5rem;
-    padding-left: 0.45rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
 
-    color: ${({ theme }) => theme.colors.primary100};
+    svg {
+      opacity: 0.5;
+
+      transition: 0.3s ease;
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
   @media (max-width: 960px) {
     text-align: center;
+    transform: translate3d(0, 40px, 0);
+
+    > span {
+      justify-content: center;
+    }
     h1 {
       font-size: 4rem;
+    }
+  }
+  @media (max-width: 420px) {
+    h1 {
+      font-size: 3.5rem;
     }
   }
 `;
@@ -91,6 +109,11 @@ export const FlexRight = styled.div`
       img {
         transform: scale(1.4) translateY(-29px);
       }
+    }
+  }
+  @media (max-width: 420px) {
+    > div img {
+      transform: scale(1) translateY(-29px);
     }
   }
 `;
@@ -212,6 +235,20 @@ export const ContentImage = styled.div`
 
 export const SectionMenu = styled.div`
   padding: 6rem 0;
+  position: relative;
+  img {
+    position: absolute;
+    width: 8%;
+  }
+  .elementBack2 {
+    transform: rotate(90deg);
+    bottom: 20px;
+    left: -50px;
+  }
+  .elementBack3 {
+    bottom: -480px;
+    right: -60px;
+  }
 `;
 
 export const TextMenu = styled.div`

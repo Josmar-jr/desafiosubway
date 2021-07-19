@@ -42,7 +42,9 @@ export function DesktopHeader() {
           </ListNav>
         </nav>
         <Contacts>
-          <button>Contato</button>
+          <Link to="/contato">
+            <button>Contato</button>
+          </Link>
           <a href="/">Trabalhe conosco</a>
         </Contacts>
       </div>
